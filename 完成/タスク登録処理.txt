@@ -1,0 +1,20 @@
+◇基本手順
+	
+システムはデータベースに接続する。
+システムはバリデーションを通過したデータ（タスクid、タスク内容、タスクメモ、開始日付、終了日付、状態、作成日時、更新日時）をデータベースに登録する。
+
+id 		 　　int
+task_name	 　　varchar
+task_memo 	 　　text
+tast_start_date 	varchar
+tast_end_date 	 　　varchar
+task_status（状態）　　int
+created_at （作成日時）datetime current_timestamp
+updated_at （更新日時　datetime current_timestamp
+
+データベース接続を閉じる。
+取り出した結果をトップページに遷移し表示する。
+
+データベース側の以上による処理中断。
+トランザクション処理でカバーする。
+エラーの場合はエラーメッセージを添えてトップページに遷移。

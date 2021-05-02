@@ -1,0 +1,22 @@
+◇基本手順
+
+ランダムな文字列を生成し、URLのパラメータとする
+現在時刻を取得し、 データをデータベースに保存
+ユーザーにパスワード再設定urlに生成したランダムな文字列をパラメータにして付与したURLを作成して貼り付けメールを送信
+現在時刻とパラメータをDBに保存。
+
+
+
+
+
+http://pettis_todos.com/password/chenge?pass_token=uhefjgoihia337oegjihy52h
+
+
+pass_token=uhefjgoihia337oegjihy52h
+
+
+
+
+
+
+

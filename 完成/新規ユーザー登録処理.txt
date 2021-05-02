@@ -1,0 +1,17 @@
+◇基本手順
+	
+システムはデータベースに接続する。
+システムはパスワードをハッシュ化する。
+システムはバリデーションを通過したデータ(ユーザーid、名前、メールアドレス、パスワード、登録日時)をデータベースに登録する。
+
+テーブル構造
+id 		 int　　　 ai
+user_name	 varchar
+email 	 	 varchar	 unique
+password 	 varchar	 
+created_at（登録日時） 	 datetime current_timestamp
+
+システムはデータベースとの接続を閉じる。
+システムはトップページに遷移する。
+
+
